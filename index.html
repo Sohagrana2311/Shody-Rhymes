@@ -13,15 +13,16 @@
         <div class="logo">
             <img src="/img/logo.png" alt="">
         </div>
-        <nav class="navber">
+        <nav class="navber" id="navber">
             <li><a href="">Furniture</a></li>
             <li><a href="">Shop</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Contact</a></li>
+            <i onclick="close()" class="fa-solid fa-xmark"></i>
         </nav>
         <div class="icon">
             <img src="/img/Bag_fill.png" alt="">
-            <i class="fa-solid fa-bars"></i>
+            <i onclick="sohag()" id="menu-bar" class="fa-solid fa-bars"></i>
         </div>
     </header>
 
@@ -40,7 +41,7 @@
 
 
     <!-- chooses section  -->
-    <section class="chooses">
+    <section class="chooses" id="furniture">
         <h2>Why Choosing Us</h2>
         <div class="container">
             <div class="card">
@@ -263,6 +264,6 @@
         <p class="h-bottom" ><small>Copyright 2021 ©shady rhymes</small></p>
     </footer>
 
-
+    <script src="/Js/utility.js"></script>    
 </body>
 </html>

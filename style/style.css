@@ -23,7 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 html{
@@ -61,7 +61,14 @@ body{
     border-radius: 2rem;
     transition: .2s;
  }
-
+/* .fa-xmark{
+  font-size: var(--h2-font);
+  color: #fff;
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  display: none;
+} */
  header .navber li:hover{
     background-color: #F79489;
 
@@ -426,8 +433,13 @@ footer .h-bottom{
        justify-content: center;
        opacity: .95;
        border-radius: 0 0 35% 0;
+       transition: .5s;
        
      }
+     header .active{
+      top: 0rem
+     }
+     
      header .icon i{
         display: block;
         /* position: absolute;
