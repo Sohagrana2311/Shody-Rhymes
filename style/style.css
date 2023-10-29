@@ -15,22 +15,21 @@
 *{
     font-family: 'Inter', sans-serif;
     font-family: 'Playpen Sans', cursive;
-    
     font-family: 'Roboto', sans-serif;
     font-family: 'Poppins', sans-serif;
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
     background-color: #fff;
+    
 }
 
 /* heade section start  */
@@ -45,7 +44,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, .4);
     z-index: 1000;
+    
  }
  header .logo img{
     width: 100%;
@@ -61,14 +62,7 @@ body{
     border-radius: 2rem;
     transition: .2s;
  }
-/* .fa-xmark{
-  font-size: var(--h2-font);
-  color: #fff;
-  position: absolute;
-  top: 3rem;
-  right: 4rem;
-  display: none;
-} */
+
  header .navber li:hover{
     background-color: #F79489;
 
@@ -100,7 +94,7 @@ body{
 
  .home{
     
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     background-image: url(/img/home\ img.png);
@@ -421,7 +415,7 @@ footer .h-bottom{
         font-size: 52.5%;
     }
     header .navber {
-        background-color: #F79489;
+      background-color: #F79489;
        position: absolute;
        top: -100rem;
        left: 0;
@@ -437,14 +431,17 @@ footer .h-bottom{
        
      }
      header .active{
-      top: 0rem
+      top:0;
      }
      
-     header .icon i{
+     header .icon i {
         display: block;
-        /* position: absolute;
-        top: 3rem;
-        right: 5rem; */
+     }
+     header .icon i.menu-position{
+        display: block;
+        position: absolute;
+        top: 2.3rem;
+        right: 10%;
      }
      
 

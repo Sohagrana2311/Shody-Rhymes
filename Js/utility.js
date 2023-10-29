@@ -1,11 +1,7 @@
 function sohag() {
-    const menuBar= document.getElementById('navber')
+    const navber= document.getElementById('navber')
+    navber.classList.toggle("active");
+    const menuBar= document.getElementById('menu-bar') 
+    menuBar.classList.toggle("menu-position")
     
-        menuBar.classList.add("active");
-    
-}
-
-function close(){
-    const menuBar= document.getElementById('navber')
-    menuBar.classList.add("close");
 }
